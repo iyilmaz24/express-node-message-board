@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+  h1 Add Message
+  p Fill out below form
+  form(action='/new', method='POST')
+    p
+      |          Your Message: 
+      input(type='text', name='messageI', value='')
+      |          Your Name: 
+      input(type='text', name='nameI', value='')
+
+    input(type='submit', value='Submit')
